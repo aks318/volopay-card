@@ -18,7 +18,7 @@
       "status": "active"
     },
     {
-      "name": "Mixmax",
+      "name": "Quickbooks",
       "budget_name": "Software subscription",
       "owner_id": 1,
       "spent": {
@@ -35,7 +35,7 @@
       "status": "active"
     },
     {
-      "name": "Mixmax",
+      "name": "Motion",
       "budget_name": "Software subscription",
       "owner_id": 1,
       "spent": {
@@ -52,7 +52,7 @@
       "status": "active"
     },
     {
-      "name": "Mixmax",
+      "name": "Pandadocs",
       "budget_name": "Software subscription",
       "owner_id": 1,
       "spent": {
@@ -86,7 +86,7 @@
       "status": "active"
     },
     {
-      "name": "Mixmax",
+      "name": "Xero",
       "budget_name": "Software subscription",
       "owner_id": 1,
       "spent": {
@@ -103,7 +103,7 @@
       "status": "active"
     },
     {
-      "name": "Mixmax",
+      "name": "SBI",
       "budget_name": "Software subscription",
       "owner_id": 1,
       "spent": {
@@ -120,7 +120,7 @@
       "status": "active"
     },
     {
-      "name": "Mixmax",
+      "name": "HDFC",
       "budget_name": "Software subscription",
       "owner_id": 1,
       "spent": {

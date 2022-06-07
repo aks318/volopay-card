@@ -1,11 +1,57 @@
-.container{
+.main-div{
+    padding: 10px 50px;
+}
+
+/* Header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.header button{
+    padding: 4px 8px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    box-shadow: 4px 4px 8px lightgray;
+    cursor: pointer;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+.navbar .links{
+    display: flex;
+    padding: 20px;
+}
+.navbar .links p{
+    margin: 5px;
+    cursor: pointer;
+}
+.navbar .links p:hover{
+    color: red;
+}
+.navbar .links .active{
+    color: red;
+    border-bottom: 2px solid red;
+}
+.navbar .filters{
+    display: flex;
+}
+
+/* Cards */
+.card-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px;
 }
 
-.container .card{
+.card-container .card{
     width: 45%;
     max-width: 450px;
     min-width: 350px;
@@ -16,31 +62,31 @@
     box-shadow: 4px 4px 8px lightgray;
 }
 
-.container .card .card-top{
+.card-container .card .card-top{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.container .card .card-top p{
+.card-container .card .card-top p{
     color: gray;
     font-size: 14px;
 }
-.container .card img{
+.card-container .card img{
     max-width: 30px;
     border-radius: 50%;
 }
 
-.container .card .card-type{
+.card-container .card .card-type{
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
 }
-.container .card .card-type p{
+.card-container .card .card-type p{
     color: gray;
     font-size: 10px;
     font-weight: 500;
 }
-.container .card .card-type p:first-child {
+.card-container .card .card-type p:first-child {
     text-transform: uppercase;
     border: 1px solid lightgray;
     border-radius: 5px;
@@ -48,30 +94,30 @@
 }
 
 
-.container .card .spent-bar{
+.card-container .card .spent-bar{
     display: flex;
 }
-.container .card .spent-bar hr {
+.card-container .card .spent-bar hr {
     margin-top: 10px;
     height: 5px;
     border: 0;
     border-radius: 10px 0 0 10px
   }
-.container .card .spent-bar hr:nth-child(2){
+.card-container .card .spent-bar hr:nth-child(2){
     border-radius: 0 10px 10px 0
   }
 
-.container .card .balance{
+.card-container .card .balance{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.container .card .balance p{
+.card-container .card .balance p{
     font-size: 14px;
 }
 
-.container .card .balance .dot {
+.card-container .card .balance .dot {
     height: 10px;
     width: 10px;
     margin-right: 10px;

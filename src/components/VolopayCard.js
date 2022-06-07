@@ -1,25 +1,50 @@
-import React, { useEffect, useState } from 'react'
-import {useDispatch , useSelector} from 'react-redux'
-import { getCardData } from '../redux-store/action'
-import Card from './Card'
+import React, { useState } from 'react'
+import AllCard from './pages/AllCard'
+import { Input } from 'antd';
+import IconButton from '@mui/material/IconButton';
+import FilterListIcon from '@mui/icons-material/FilterList';
 import './VolopayCard.css'
 
+const Search = Input.Search;
 const VolopayCard = () => {
-    const cardData = useSelector(state => state.cardData)
-    const dispatch = useDispatch()
-    const [page , setPage] = useState(1)
-    console.log(cardData)
-
-    useEffect(() => {
-        dispatch(getCardData(page))
-    } , [page])
+    const [activeLink , setActiveLink] = useState("All")
 
   return (
-    <div className='container'>
-        {cardData.map((data , index) =>(
-            <Card key={index} data={data}/>
-        ))}
-    </div>
+      <div className='main-div'>
+        <div className='header'>
+            <h1>Virtual cards</h1>
+            <button>+ Virtual cards</button>
+        </div>
+        <div className='navbar'>
+            <div className='links'>
+                <p 
+                    className={activeLink === "Your" ? "active" : ""}
+                    onClick={() => setActiveLink("Your")}
+                >Your</p>
+                <p 
+                    className={activeLink === "All" ? "active" : ""}
+                    onClick={() => setActiveLink("All")}
+                >All</p>
+                <p>Blocked</p>
+            </div>
+            <div className='filters'>
+                <Search
+                    placeholder="Search Your Card"
+                    style={{ width: 200 }}
+                    onSearch={value => console.log(value)}
+                />
+                <IconButton
+                    aria-label="expand row"
+                    size="small"
+                >
+                    <FilterListIcon />
+                </IconButton>
+            </div>
+        </div>
+        <div className='card-container'>
+            {activeLink === "All" && <AllCard />}
+        </div>
+      </div>
   )
 }
 
