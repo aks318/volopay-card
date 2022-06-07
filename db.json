@@ -22,11 +22,215 @@
       "budget_name": "Software subscription",
       "owner_id": 1,
       "spent": {
+      "value": 200,
+      "currency": "SGD"
+      },
+      "available_to_spend": {
+      "value": 800,
+      "currency": "SGD"
+      },
+      "card_type": "burner",
+      "expiry": "9 feb",
+      "limit": 100,
+      "status": "active"
+    },
+    {
+      "name": "Mixmax",
+      "budget_name": "Software subscription",
+      "owner_id": 1,
+      "spent": {
+      "value": 350,
+      "currency": "SGD"
+      },
+      "available_to_spend": {
+      "value": 1500,
+      "currency": "SGD"
+      },
+      "card_type": "subscription",
+      "expiry": "9 feb",
+      "limit": 100,
+      "status": "active"
+    },
+    {
+      "name": "Mixmax",
+      "budget_name": "Software subscription",
+      "owner_id": 1,
+      "spent": {
+      "value": 0,
+      "currency": "SGD"
+      },
+      "available_to_spend": {
+      "value": 1000,
+      "currency": "SGD"
+      },
+      "card_type": "subscription",
+      "expiry": "9 feb",
+      "limit": 100,
+      "status": "active"
+    },
+    {
+      "name": "Mixmax",
+      "budget_name": "Software subscription",
+      "owner_id": 1,
+      "spent": {
       "value": 100,
       "currency": "SGD"
       },
       "available_to_spend": {
       "value": 1000,
+      "currency": "SGD"
+      },
+      "card_type": "subscription",
+      "expiry": "9 feb",
+      "limit": 100,
+      "status": "active"
+    },
+    {
+      "name": "Mixmax",
+      "budget_name": "Software subscription",
+      "owner_id": 1,
+      "spent": {
+      "value": 100,
+      "currency": "SGD"
+      },
+      "available_to_spend": {
+      "value": 1000,
+      "currency": "SGD"
+      },
+      "card_type": "burner",
+      "expiry": "9 feb",
+      "limit": 100,
+      "status": "active"
+    },
+    {
+      "name": "Mixmax",
+      "budget_name": "Software subscription",
+      "owner_id": 1,
+      "spent": {
+      "value": 100,
+      "currency": "SGD"
+      },
+      "available_to_spend": {
+      "value": 1000,
+      "currency": "SGD"
+      },
+      "card_type": "burner",
+      "expiry": "9 feb",
+      "limit": 100,
+      "status": "active"
+    },
+    {
+      "name": "Mixmax",
+      "budget_name": "Software subscription",
+      "owner_id": 1,
+      "spent": {
+      "value": 250,
+      "currency": "SGD"
+      },
+      "available_to_spend": {
+      "value": 2350,
+      "currency": "SGD"
+      },
+      "card_type": "burner",
+      "expiry": "9 feb",
+      "limit": 100,
+      "status": "active"
+    },
+    {
+      "name": "Mixmax",
+      "budget_name": "Software subscription",
+      "owner_id": 1,
+      "spent": {
+      "value": 1000,
+      "currency": "SGD"
+      },
+      "available_to_spend": {
+      "value": 0,
+      "currency": "SGD"
+      },
+      "card_type": "burner",
+      "expiry": "9 feb",
+      "limit": 100,
+      "status": "active"
+    },
+    {
+      "name": "Mixmax",
+      "budget_name": "Software subscription",
+      "owner_id": 1,
+      "spent": {
+      "value": 100,
+      "currency": "SGD"
+      },
+      "available_to_spend": {
+      "value": 1000,
+      "currency": "SGD"
+      },
+      "card_type": "subscription",
+      "expiry": "9 feb",
+      "limit": 100,
+      "status": "active"
+    },
+    {
+      "name": "Mixmax",
+      "budget_name": "Software subscription",
+      "owner_id": 1,
+      "spent": {
+      "value": 100,
+      "currency": "SGD"
+      },
+      "available_to_spend": {
+      "value": 1000,
+      "currency": "SGD"
+      },
+      "card_type": "burner",
+      "expiry": "9 feb",
+      "limit": 100,
+      "status": "active"
+    },
+    {
+      "name": "Mixmax",
+      "budget_name": "Software subscription",
+      "owner_id": 1,
+      "spent": {
+      "value": 100,
+      "currency": "SGD"
+      },
+      "available_to_spend": {
+      "value": 1000,
+      "currency": "SGD"
+      },
+      "card_type": "subscription",
+      "expiry": "9 feb",
+      "limit": 100,
+      "status": "active"
+    },
+    {
+      "name": "Mixmax",
+      "budget_name": "Software subscription",
+      "owner_id": 1,
+      "spent": {
+      "value": 100,
+      "currency": "SGD"
+      },
+      "available_to_spend": {
+      "value": 1000,
+      "currency": "SGD"
+      },
+      "card_type": "burner",
+      "expiry": "9 feb",
+      "limit": 100,
+      "status": "active"
+    },
+    {
+      "name": "Mixmax",
+      "budget_name": "Software subscription",
+      "owner_id": 1,
+      "spent": {
+      "value": 1200,
+      "currency": "SGD"
+      },
+      "available_to_spend": {
+      "value": 1550,
       "currency": "SGD"
       },
       "card_type": "burner",
@@ -131,160 +335,7 @@
       "value": 1000,
       "currency": "SGD"
       },
-      "card_type": "burner",
-      "expiry": "9 feb",
-      "limit": 100,
-      "status": "active"
-    },
-    {
-      "name": "Mixmax",
-      "budget_name": "Software subscription",
-      "owner_id": 1,
-      "spent": {
-      "value": 100,
-      "currency": "SGD"
-      },
-      "available_to_spend": {
-      "value": 1000,
-      "currency": "SGD"
-      },
-      "card_type": "burner",
-      "expiry": "9 feb",
-      "limit": 100,
-      "status": "active"
-    },
-    {
-      "name": "Mixmax",
-      "budget_name": "Software subscription",
-      "owner_id": 1,
-      "spent": {
-      "value": 100,
-      "currency": "SGD"
-      },
-      "available_to_spend": {
-      "value": 1000,
-      "currency": "SGD"
-      },
-      "card_type": "burner",
-      "expiry": "9 feb",
-      "limit": 100,
-      "status": "active"
-    },
-    {
-      "name": "Mixmax",
-      "budget_name": "Software subscription",
-      "owner_id": 1,
-      "spent": {
-      "value": 100,
-      "currency": "SGD"
-      },
-      "available_to_spend": {
-      "value": 1000,
-      "currency": "SGD"
-      },
-      "card_type": "burner",
-      "expiry": "9 feb",
-      "limit": 100,
-      "status": "active"
-    },
-    {
-      "name": "Mixmax",
-      "budget_name": "Software subscription",
-      "owner_id": 1,
-      "spent": {
-      "value": 100,
-      "currency": "SGD"
-      },
-      "available_to_spend": {
-      "value": 1000,
-      "currency": "SGD"
-      },
-      "card_type": "burner",
-      "expiry": "9 feb",
-      "limit": 100,
-      "status": "active"
-    },
-    {
-      "name": "Mixmax",
-      "budget_name": "Software subscription",
-      "owner_id": 1,
-      "spent": {
-      "value": 100,
-      "currency": "SGD"
-      },
-      "available_to_spend": {
-      "value": 1000,
-      "currency": "SGD"
-      },
-      "card_type": "burner",
-      "expiry": "9 feb",
-      "limit": 100,
-      "status": "active"
-    },
-    {
-      "name": "Mixmax",
-      "budget_name": "Software subscription",
-      "owner_id": 1,
-      "spent": {
-      "value": 100,
-      "currency": "SGD"
-      },
-      "available_to_spend": {
-      "value": 1000,
-      "currency": "SGD"
-      },
-      "card_type": "burner",
-      "expiry": "9 feb",
-      "limit": 100,
-      "status": "active"
-    },
-    {
-      "name": "Mixmax",
-      "budget_name": "Software subscription",
-      "owner_id": 1,
-      "spent": {
-      "value": 100,
-      "currency": "SGD"
-      },
-      "available_to_spend": {
-      "value": 1000,
-      "currency": "SGD"
-      },
-      "card_type": "burner",
-      "expiry": "9 feb",
-      "limit": 100,
-      "status": "active"
-    },
-    {
-      "name": "Mixmax",
-      "budget_name": "Software subscription",
-      "owner_id": 1,
-      "spent": {
-      "value": 100,
-      "currency": "SGD"
-      },
-      "available_to_spend": {
-      "value": 1000,
-      "currency": "SGD"
-      },
-      "card_type": "burner",
-      "expiry": "9 feb",
-      "limit": 100,
-      "status": "active"
-    },
-    {
-      "name": "Mixmax",
-      "budget_name": "Software subscription",
-      "owner_id": 1,
-      "spent": {
-      "value": 100,
-      "currency": "SGD"
-      },
-      "available_to_spend": {
-      "value": 1000,
-      "currency": "SGD"
-      },
-      "card_type": "burner",
+      "card_type": "subscription",
       "expiry": "9 feb",
       "limit": 100,
       "status": "active"
