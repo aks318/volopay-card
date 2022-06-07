@@ -3,11 +3,21 @@ import {useDispatch , useSelector} from 'react-redux'
 import Card from '../Card'
 import { getCardData } from '../../redux-store/action'
 
-const AllCard = () => {
-    const cardData = useSelector(state => state.cardData)
+const AllCard = ({search}) => {
+    const storeData = useSelector(state => state.cardData)
+
+    const [cardData , setCardData] = useState([])
     const dispatch = useDispatch()
     const [page , setPage] = useState(1)
-    console.log(cardData)
+
+    useEffect(() =>{
+        setCardData(storeData)
+    } , [storeData])
+
+    useEffect(() =>{
+        const filterData = storeData.filter(data => data.name.toLowerCase().includes(search.toLowerCase()))
+        setCardData(filterData)
+    } , [search])
 
     useEffect(() => {
         dispatch(getCardData(page))

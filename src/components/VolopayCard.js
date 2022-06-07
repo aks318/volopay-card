@@ -8,6 +8,7 @@ import './VolopayCard.css'
 const Search = Input.Search;
 const VolopayCard = () => {
     const [activeLink , setActiveLink] = useState("All")
+    const [search , setSearch] = useState("")
 
   return (
       <div className='main-div'>
@@ -31,7 +32,7 @@ const VolopayCard = () => {
                 <Search
                     placeholder="Search Your Card"
                     style={{ width: 200 }}
-                    onSearch={value => console.log(value)}
+                    onChange={e => setSearch(e.target.value)}
                 />
                 <IconButton
                     aria-label="expand row"
@@ -42,7 +43,7 @@ const VolopayCard = () => {
             </div>
         </div>
         <div className='card-container'>
-            {activeLink === "All" && <AllCard />}
+            {activeLink === "All" && <AllCard search={search}/>}
         </div>
       </div>
   )
