@@ -67,7 +67,7 @@ const VolopayCard = () => {
                     </div>
                     <div className='buttons'>
                         <button>Apply</button>
-                        <button>Clear</button>
+                        <button style={{backgroundColor : "lightgrey" , color : "black"}}>Clear</button>
                     </div>
                 </div>
             </div>

@@ -61,6 +61,31 @@
 .navbar .filters .filter-box h4{
     border-bottom: 1px solid lightgrey;
 }
+.navbar .filters .filter-box p{
+    color: gray;
+    font-size: 14;
+    margin: 1px;
+}
+.navbar .filters .filter-box .card-type, 
+.navbar .filters .filter-box .card-holder,
+.navbar .filters .filter-box .buttons{
+    padding: 0 10px;
+}
+
+.navbar .filters .filter-box .buttons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .filters .filter-box .buttons button{
+    width: 45%;
+    height: 25px;
+    border: none;
+    background-color: red;
+    border-radius: 4px;
+    color: white;
+}
 
 /* Cards */
 .card-container{
