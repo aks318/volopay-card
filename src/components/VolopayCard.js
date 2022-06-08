@@ -4,6 +4,7 @@ import { Input } from 'antd';
 import IconButton from '@mui/material/IconButton';
 import FilterListIcon from '@mui/icons-material/FilterList';
 import './VolopayCard.css'
+import YourCard from './pages/YourCard';
 
 const Search = Input.Search;
 const VolopayCard = () => {
@@ -44,6 +45,7 @@ const VolopayCard = () => {
         </div>
         <div className='card-container'>
             {activeLink === "All" && <AllCard search={search}/>}
+            {activeLink === "Your" && <YourCard search={search}/>}
         </div>
       </div>
   )
