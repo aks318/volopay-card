@@ -41,6 +41,25 @@
 }
 .navbar .filters{
     display: flex;
+    position: relative;
+}
+.navbar .filters .filter-box{
+    width: 350px;
+    height: auto;
+    padding: 10px;
+    border: 1px solid red;
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    z-index: 100;
+    background-color: white;
+    display: none;
+}
+.navbar .filters .show-filters{
+    display: block;
+}
+.navbar .filters .filter-box h4{
+    border-bottom: 1px solid lightgrey;
 }
 
 /* Cards */
