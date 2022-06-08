@@ -28,6 +28,9 @@
     display: flex;
     padding: 20px;
 }
+.navbar .links a{
+    color: black;
+}
 .navbar .links p{
     margin: 5px;
     cursor: pointer;
@@ -129,6 +132,7 @@
     color: gray;
     font-size: 10px;
     font-weight: 500;
+    margin: 0;
 }
 .card-container .card .card-type p:first-child {
     text-transform: uppercase;

@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import AllCard from './pages/AllCard'
+import React, { useEffect, useState } from 'react'
+import { Link, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import { Input } from 'antd';
 import IconButton from '@mui/material/IconButton';
 import FilterListIcon from '@mui/icons-material/FilterList';
@@ -7,14 +7,20 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import { Select } from 'antd';
 import './VolopayCard.css'
+import AllCard from './pages/AllCard'
 import YourCard from './pages/YourCard';
 
 const { Option } = Select;
 const Search = Input.Search;
 const VolopayCard = () => {
-    const [activeLink , setActiveLink] = useState("All")
+    const location = useLocation()
+    const navigate = useNavigate()
     const [search , setSearch] = useState("")
     const [openFilter , setOpenFilter] = useState(false)
+
+    useEffect(() => {
+        navigate('/all-card')
+    }, [])
 
   return (
       <div className='main-div'>
@@ -24,14 +30,16 @@ const VolopayCard = () => {
         </div>
         <div className='navbar'>
             <div className='links'>
-                <p 
-                    className={activeLink === "Your" ? "active" : ""}
-                    onClick={() => setActiveLink("Your")}
-                >Your</p>
-                <p 
-                    className={activeLink === "All" ? "active" : ""}
-                    onClick={() => setActiveLink("All")}
-                >All</p>
+                <Link to="/your-card">
+                    <p 
+                        className={location.pathname === "/your-card" ? "active" : ""}
+                    >Your</p>
+                </Link>
+                <Link to="/all-card">
+                    <p 
+                        className={location.pathname === "/all-card" ? "active" : ""}
+                    >All</p>
+                </Link>
                 <p>Blocked</p>
             </div>
             <div className='filters'>
@@ -73,12 +81,12 @@ const VolopayCard = () => {
             </div>
         </div>
         <div className='card-container'>
-            {activeLink === "All" && <AllCard search={search}
-                clearSearch = {() => setSearch("")}
-            />}
-            {activeLink === "Your" && <YourCard search={search}
-                clearSearch = {() => setSearch("")}
-            />}
+                <Routes>
+                    <Route path="/your-card" element={<YourCard search={search} clearSearch = {() => setSearch("")}/>}/>
+                </Routes>
+                <Routes>
+                    <Route path="/all-card" element={<AllCard search={search} clearSearch = {() => setSearch("")}/>}/>
+                </Routes>
         </div>
       </div>
   )

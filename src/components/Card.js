@@ -12,7 +12,7 @@ const Card = ({data}) => {
         </div>
         <div className='card-type'>
             <p>{data.card_type}</p>
-            <p>Expires: {data.expiry}</p>
+            {data.card_type === 'burner' ? <p>Expires: {data.expiry}</p> : <p>{data.expiry.split(" ")[1].toUpperCase()} Limit: {data.limit}</p>}
         </div>
         <div className='spent-bar'>
             <hr style={{width : `${(data.spent.value/(data.available_to_spend.value + data.spent.value))*100}%` , backgroundColor : "red"}}></hr>
