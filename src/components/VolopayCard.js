@@ -33,6 +33,7 @@ const VolopayCard = () => {
                 <Search
                     placeholder="Search Your Card"
                     style={{ width: 200 }}
+                    value={search}
                     onChange={e => setSearch(e.target.value)}
                 />
                 <IconButton
@@ -44,8 +45,12 @@ const VolopayCard = () => {
             </div>
         </div>
         <div className='card-container'>
-            {activeLink === "All" && <AllCard search={search}/>}
-            {activeLink === "Your" && <YourCard search={search}/>}
+            {activeLink === "All" && <AllCard search={search}
+                clearSearch = {() => setSearch("")}
+            />}
+            {activeLink === "Your" && <YourCard search={search}
+                clearSearch = {() => setSearch("")}
+            />}
         </div>
       </div>
   )

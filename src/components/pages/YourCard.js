@@ -3,7 +3,7 @@ import {useDispatch , useSelector} from 'react-redux'
 import { getMyCardData } from '../../redux-store/action'
 import Card from '../Card'
 
-const YourCard = ({search}) => {
+const YourCard = ({search , clearSearch}) => {
     const owner_id = 2   //My card id
     const storeData = useSelector(state => state.myCardData)
 
@@ -20,7 +20,10 @@ const YourCard = ({search}) => {
     } , [search])
 
     useEffect(() => {
-        dispatch(getMyCardData(owner_id))
+        dispatch(getMyCardData(owner_id))    
+        return () => {
+            clearSearch()
+        }
     } , [])
   return (
     <>
