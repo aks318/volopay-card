@@ -8,3 +8,9 @@ export const StyleButton = styled.button`
     padding: 2px 4px;
     width: 200px;
 `
+
+export const FancyButton = styled(StyleButton)`
+    background-color: green;
+    border: none;
+    display: block;
+`

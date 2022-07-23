@@ -1,5 +1,5 @@
 import React from 'react'
-import StyleButton from './Components/Button/Button'
+import {FancyButton, StyleButton} from './Components/Button/Button'
 
 const Index = () => {
   return (
@@ -7,6 +7,7 @@ const Index = () => {
     <StyleButton>Button</StyleButton>
     <br />
     <StyleButton variant = 'outline'>Button</StyleButton>
+    <FancyButton as="a">FancyButton</FancyButton>
     </>
   )
 }
