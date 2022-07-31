@@ -1,5 +1,5 @@
 import React from 'react'
-import {FancyButton, StyleButton} from './Components/Button/Button'
+import {FancyButton, StyleButton, SubmitButton} from './Components/Button/Button'
 
 const Index = () => {
   return (
@@ -8,6 +8,8 @@ const Index = () => {
     <br />
     <StyleButton variant = 'outline'>Button</StyleButton>
     <FancyButton as="a">FancyButton</FancyButton>
+    <br />
+    <SubmitButton>Submit</SubmitButton>
     </>
   )
 }
